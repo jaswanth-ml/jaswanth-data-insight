@@ -16,16 +16,16 @@ const HeroSection = () => {
         </div>
 
         <h1 className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6 leading-[0.9] animate-fade-up" style={{ animationDelay: "0.2s" }}>
-          <span className="gradient-text">Jaswanth</span>
+          <span className="gradient-text">Jaswanth Chodimalla</span>
         </h1>
 
         <p className="font-display text-lg md:text-xl lg:text-2xl font-medium text-foreground/80 mb-5 animate-fade-up max-w-2xl mx-auto leading-relaxed" style={{ animationDelay: "0.35s" }}>
-          Transforming Raw Data into
-          <span className="text-primary font-semibold"> Strategic Business Decisions</span>
+          Transforming Data into
+          <span className="text-primary font-semibold"> Actionable Business Decisions</span>
         </p>
 
         <p className="text-muted-foreground text-sm md:text-base max-w-xl mx-auto mb-12 leading-relaxed animate-fade-up" style={{ animationDelay: "0.5s" }}>
-          I help businesses uncover hidden insights, optimize revenue strategies, and make data-backed decisions that drive measurable growth.
+          Data Analyst skilled in SQL, Python, and Power BI, focused on revenue optimization and risk analytics.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.65s" }}>
