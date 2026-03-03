@@ -12,9 +12,9 @@ const AboutSection = () => {
 
         <div className="glass-card p-8 md:p-12">
           <p className="text-muted-foreground text-base md:text-lg leading-[1.8]">
-            Analytical ECE graduate with hands-on experience in{" "}
+            Analytical ECE graduate with hands on experience in{" "}
             <span className="text-foreground font-medium">SQL, Python, Excel, and Power BI</span>. 
-            Skilled in cleaning large datasets, performing exploratory data analysis, building predictive models, 
+            Skilled in cleaning large datasets, performing exploratory data analysis, building basic machine learning predictive models 
             and developing business dashboards. Strong understanding of{" "}
             <span className="text-foreground font-medium">revenue metrics, customer behavior, 
             and credit risk analysis</span>. Passionate about solving real-world business problems using data-driven strategies.
