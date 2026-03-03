@@ -50,46 +50,47 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="section-padding" ref={ref}>
       <div className={`max-w-5xl mx-auto transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-2 gradient-text inline-block">Featured Projects</h2>
-        <div className="w-16 h-1 bg-primary rounded-full mb-12" />
+        <span className="section-label">Portfolio</span>
+        <h2 className="section-title gradient-text inline-block">Featured Projects</h2>
+        <div className="section-divider" />
 
-        <div className="space-y-8">
+        <div className="space-y-10">
           {projects.map((project, i) => {
             const Icon = project.icon;
             return (
               <div
                 key={project.title}
-                className="glass-card-hover p-8 md:p-10"
+                className="glass-card-hover p-8 md:p-10 group"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 rounded-lg bg-primary/10 border border-primary/20 flex-shrink-0">
+                <div className="flex items-start gap-5 mb-6">
+                  <div className="p-3.5 rounded-xl bg-primary/8 border border-primary/15 flex-shrink-0 group-hover:bg-primary/12 group-hover:border-primary/25 transition-all duration-400">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-display text-xl md:text-2xl font-bold text-foreground">{project.title}</h3>
-                    <p className="text-muted-foreground mt-1">{project.description}</p>
+                    <h3 className="font-display text-xl md:text-2xl font-bold text-foreground leading-tight">{project.title}</h3>
+                    <p className="text-muted-foreground text-sm mt-2 leading-relaxed">{project.description}</p>
                   </div>
                 </div>
 
-                <ul className="space-y-2 mb-6 ml-1">
+                <ul className="space-y-2.5 mb-8 pl-1">
                   {project.contributions.map((c) => (
-                    <li key={c} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 flex-shrink-0" />
+                    <li key={c} className="flex items-start gap-3 text-sm text-muted-foreground">
+                      <span className="w-1 h-1 rounded-full bg-primary/60 mt-2 flex-shrink-0" />
                       {c}
                     </li>
                   ))}
                 </ul>
 
-                <div className="flex flex-wrap gap-2 mb-6">
+                <div className="flex flex-wrap gap-2 mb-8">
                   {project.technologies.map((t) => (
                     <span key={t} className="tech-tag">{t}</span>
                   ))}
                 </div>
 
-                <div className="p-4 rounded-lg bg-primary/5 border border-primary/10">
-                  <p className="text-sm text-foreground">
-                    <span className="font-semibold text-primary">Business Impact:</span>{" "}
+                <div className="p-5 rounded-xl border border-primary/10" style={{ background: "linear-gradient(135deg, hsl(var(--primary) / 0.04), hsl(var(--glow-secondary) / 0.02))" }}>
+                  <p className="text-sm text-foreground/90 leading-relaxed">
+                    <span className="font-display font-semibold text-primary text-xs tracking-wider uppercase mr-2">Impact →</span>
                     {project.impact}
                   </p>
                 </div>

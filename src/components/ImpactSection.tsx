@@ -16,22 +16,23 @@ const ImpactSection = () => {
   return (
     <section id="impact" className="section-padding" ref={ref}>
       <div className={`max-w-5xl mx-auto transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-2 gradient-text inline-block">What I Bring to the Table</h2>
-        <div className="w-16 h-1 bg-primary rounded-full mb-12" />
+        <span className="section-label">Value</span>
+        <h2 className="section-title gradient-text inline-block">What I Bring to the Table</h2>
+        <div className="section-divider" />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {impacts.map((item, i) => {
             const Icon = item.icon;
             return (
               <div
                 key={item.label}
-                className="glass-card-hover p-6 flex items-center gap-4"
+                className="glass-card-hover p-6 flex items-center gap-4 group"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
-                <div className="p-2.5 rounded-lg bg-primary/10 border border-primary/20 flex-shrink-0">
+                <div className="p-2.5 rounded-xl bg-primary/8 border border-primary/15 flex-shrink-0 group-hover:bg-primary/12 group-hover:border-primary/25 group-hover:shadow-[0_0_16px_hsl(var(--primary)/0.15)] transition-all duration-400">
                   <Icon className="w-5 h-5 text-primary" />
                 </div>
-                <span className="text-sm font-medium text-foreground">{item.label}</span>
+                <span className="text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors duration-300">{item.label}</span>
               </div>
             );
           })}
