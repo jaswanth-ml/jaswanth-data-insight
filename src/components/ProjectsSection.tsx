@@ -5,6 +5,7 @@ const projects = [
   {
     icon: TrendingUp,
     title: "Housing Price Prediction Model",
+    github: "https://github.com/jaswanth-ml/Housing-price-prediction",
     description: "Developed a predictive regression model to estimate housing prices using structured datasets.",
     contributions: [
       "Implemented Linear Regression model",
@@ -18,6 +19,7 @@ const projects = [
   {
     icon: ShoppingCart,
     title: "E-Commerce Customer & Revenue Intelligence Dashboard",
+    github: "https://github.com/jaswanth-ml/ecommerce-sales-customer-insights-dashboard",
     description: "Built a comprehensive analytics dashboard to analyze customer behavior and revenue trends.",
     contributions: [
       "Cleaned and validated 100K+ transaction records",
@@ -31,6 +33,7 @@ const projects = [
   {
     icon: Shield,
     title: "Loan Portfolio Risk & Exposure Dashboard",
+    github: "https://github.com/jaswanth-ml/Loan-Default-Risk-Exposure-Dashboard",
     description: "Designed an interactive risk analytics dashboard to evaluate loan portfolio performance and default exposure.",
     contributions: [
       "Analyzed 4.5K+ loan records",
@@ -58,6 +61,12 @@ const ProjectsSection = () => {
           {projects.map((project, i) => {
             const Icon = project.icon;
             return (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+                >
               <div
                 key={project.title}
                 className="glass-card-hover p-8 md:p-10 group"
@@ -95,6 +104,7 @@ const ProjectsSection = () => {
                   </p>
                 </div>
               </div>
+              </a>
             );
           })}
         </div>
