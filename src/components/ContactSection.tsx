@@ -38,6 +38,8 @@ const ContactSection = () => {
                   <a
                     key={link.label}
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group flex items-center gap-3 p-3.5 rounded-xl bg-secondary/20 border border-border/30 hover:border-primary/25 hover:bg-secondary/40 transition-all duration-300"
                   >
                     <Icon className="w-4 h-4 text-primary/70 group-hover:text-primary transition-colors" />
