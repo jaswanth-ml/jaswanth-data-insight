@@ -29,9 +29,9 @@ const ContactSection = () => {
             </p>
             <div className="space-y-3">
               {[
-                { href: "mailto:jaswanth@example.com", icon: Mail, label: "jaswanth@example.com" },
-                { href: "#", icon: Linkedin, label: "LinkedIn" },
-                { href: "#", icon: Github, label: "GitHub" },
+                { href: "mailto:chodimallajaswanth@gmail.com.com", icon: Mail, label: "chodimallajaswanth@gmail.com" },
+                { href: "https://www.linkedin.com/in/jaswanthchodimalla/", icon: Linkedin, label: "LinkedIn" },
+                { href: "https://github.com/jaswanth-ml", icon: Github, label: "GitHub" },
               ].map((link) => {
                 const Icon = link.icon;
                 return (
